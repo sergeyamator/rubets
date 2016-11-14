@@ -1,0 +1,6 @@
+include ../mixins/icons
+
+div.social-links
+  each item in ['vk', 'github', 'in']
+    a(href="#" class="social-links_link")
+      +icon(item)

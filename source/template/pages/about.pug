@@ -1,0 +1,12 @@
+extends ../layouts/base.pug
+include ../mixins/icons
+
+block variables
+  - var title = "About me"
+
+block content
+  include ../common/header
+  include ../sections/about-hero
+  include ../sections/about-me
+  include ../sections/contacts
+  include ../common/footer

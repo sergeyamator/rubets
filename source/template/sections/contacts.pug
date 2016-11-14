@@ -1,0 +1,12 @@
+include ../mixins/icons
+
+.contacts
+  .title Контакты
+
+  - var contacts = ['skype', 'mail', '063 999 77 92']
+  - var url = ['skype:amatorsergey?chat', 'mailto:sramator@mail.ru', 'tel:+380639997792']
+  - var icons = ['skype', 'phone', 'envelope']
+
+  each item, index in contacts
+    a(href=url[index] class="contacts_link")= item
+      +icon(icons[index])

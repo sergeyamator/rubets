@@ -1,0 +1,33 @@
+section.about-me
+  .title Обо мне
+    .about-me_picture: img(src="assets/images/me.jpg" alt="Сергей Рубец, front-end разработчик")
+
+  .about-me_description
+    .title Кто я
+    p.about-me_text.
+      Я front-end разработчик из Киева. Мне 28 лет.
+      Я занимаюсь разработкой современных сайтов и приложений.
+      Мне нравится делать интересные и современные проекты.
+      Этот сайт я сделал в рамках участия в Школе онлайн образования LoftSchool.
+
+  .about-me_description
+    .title Чем я могу быть вам полезен
+    p.about-me_text.
+      Меня привлекает современная front-end разработка, стараюсь изучать все что с ней связанно, например,
+      ES6, angular, react, webpack, pug, не сказать что б у меня был очень большой опыт работы с ними, но
+      я к этому стремлюсь :)
+
+  .about-me_description
+    .title Технологии, которые меня привлекают:
+    .about-me_title Frontend
+      ul.skills
+      - var frontend = [ 'html5', 'css3', 'JavaScript', 'Angular', 'React']
+        each item in frontend
+          li.skills_item= item
+
+  .about-me_description
+    .about-me_title Workflow
+      ul.skills
+      - var workflow = [ 'webpack', 'babel', 'npm', 'gulp', 'git']
+        each item in workflow
+          li.skills_item= item
